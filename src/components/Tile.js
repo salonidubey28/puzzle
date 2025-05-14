@@ -6,7 +6,7 @@ export function FilledTile({index, value, dragStart}) {
         id={`place-${index + 1}`}
         className={
             "shadow w-20 h-20 rounded " +
-            (index == value - 1
+            (index === value - 1
             ? "bg-gradient-to-r from-pink-500 to-yellow-500"
             : "bg-gray-900")
         }
